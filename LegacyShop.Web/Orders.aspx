@@ -1,5 +1,4 @@
 <%@ Page Title="Orders" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Orders.aspx.cs" Inherits="LegacyShop.Web.OrdersPage" %>
-<asp:Content ID="Title1" ContentPlaceHolderID="TitleContent" runat="server">Orders</asp:Content>
 <asp:Content ID="Main1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Orders</h2>
     <asp:Repeater ID="rptOrders" runat="server" OnItemCommand="rptOrders_ItemCommand">

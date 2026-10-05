@@ -1,5 +1,4 @@
 <%@ Page Title="Products" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="LegacyShop.Web.ProductsPage" %>
-<asp:Content ID="Title1" ContentPlaceHolderID="TitleContent" runat="server">Products</asp:Content>
 <asp:Content ID="Main1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Products</h2>
     <p>

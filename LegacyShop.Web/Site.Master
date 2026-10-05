@@ -3,7 +3,7 @@
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
-    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /> - LegacyShop</title>
+    <title><%: Page.Title %> - LegacyShop</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <%: Styles.Render("~/bundles/css") %>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server" />

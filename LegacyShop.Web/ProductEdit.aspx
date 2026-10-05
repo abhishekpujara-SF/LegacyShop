@@ -1,5 +1,4 @@
 <%@ Page Title="Edit product" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductEdit.aspx.cs" Inherits="LegacyShop.Web.ProductEditPage" %>
-<asp:Content ID="Title1" ContentPlaceHolderID="TitleContent" runat="server">Edit product</asp:Content>
 <asp:Content ID="Main1" ContentPlaceHolderID="MainContent" runat="server">
     <h2><asp:Literal ID="litHeading" runat="server" Text="New product" /></h2>
     <asp:ValidationSummary ID="vsSummary" runat="server" CssClass="text-danger" />

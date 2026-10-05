@@ -1,5 +1,4 @@
 <%@ Page Title="Customers" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Customers.aspx.cs" Inherits="LegacyShop.Web.CustomersPage" %>
-<asp:Content ID="Title1" ContentPlaceHolderID="TitleContent" runat="server">Customers</asp:Content>
 <asp:Content ID="Main1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Customers</h2>
     <%-- Declarative data access: SqlDataSource bound straight to the connection string, with in-grid edit/delete. --%>

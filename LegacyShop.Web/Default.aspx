@@ -1,5 +1,4 @@
 <%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LegacyShop.Web.DefaultPage" %>
-<asp:Content ID="Title1" ContentPlaceHolderID="TitleContent" runat="server">Dashboard</asp:Content>
 <asp:Content ID="Main1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Dashboard</h2>
     <div class="row stats">

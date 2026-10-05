@@ -1,5 +1,4 @@
 <%@ Page Title="Sign in" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="LegacyShop.Web.LoginPage" %>
-<asp:Content ID="Title1" ContentPlaceHolderID="TitleContent" runat="server">Sign in</asp:Content>
 <asp:Content ID="Main1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Sign in</h2>
     <div class="form-horizontal" style="max-width:420px">
