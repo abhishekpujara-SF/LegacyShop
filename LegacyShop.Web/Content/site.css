@@ -1,0 +1,5 @@
+.stock-zero { color: #fff; background: #c9302c; font-weight: bold; }
+.stock-low { color: #8a6d3b; font-weight: bold; }
+table th { white-space: nowrap; }
+.navbar-text a, .navbar-text span { color: #ddd; margin-left: 6px; }
+.navbar-inverse { background-image: url(../Content/img/header-bg.png); background-repeat: repeat-x; }

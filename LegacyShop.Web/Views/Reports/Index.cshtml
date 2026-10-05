@@ -1,0 +1,25 @@
+@model LegacyShop.Web.Models.DashboardStats
+@{
+    ViewBag.Title = "Low stock";
+}
+<h2>Low stock report</h2>
+<p>Active products with stock at or below @ViewBag.Threshold.</p>
+@if (Model.LowStock.Count == 0)
+{
+    <p class="text-success">Nothing is running low.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <tr><th>SKU</th><th>Name</th><th>Category</th><th>Stock</th></tr>
+        @foreach (var p in Model.LowStock)
+        {
+            <tr>
+                <td>@p.Sku</td>
+                <td>@p.Name</td>
+                <td>@p.CategoryName</td>
+                <td class="@(p.Stock == 0 ? "stock-zero" : "stock-low")">@p.Stock</td>
+            </tr>
+        }
+    </table>
+}

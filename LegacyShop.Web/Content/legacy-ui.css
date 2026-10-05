@@ -1,0 +1,18 @@
+/* Legacy table-era styling (pre-flexbox, vendor prefixes, IE hacks) kept on purpose for UI modernization. */
+body { padding-top: 0; font-family: Verdana, Arial, sans-serif; font-size: 13px; }
+.body-content { padding-top: 10px; }
+.stat-box {
+    border: 1px solid #ccc;
+    padding: 14px;
+    text-align: center;
+    background: #f5f5f5;
+    background: -webkit-linear-gradient(top, #ffffff, #e8e8e8);
+    background: -moz-linear-gradient(top, #ffffff, #e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e8e8');
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    *zoom: 1;
+}
+.stat-value { font-size: 28px; font-weight: bold; }
+.clearfix { *zoom: 1; }

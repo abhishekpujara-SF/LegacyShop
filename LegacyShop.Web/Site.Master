@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LegacyShop.Web.SiteMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /> - LegacyShop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <%: Styles.Render("~/bundles/css") %>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <a class="navbar-brand" href="Default.aspx">LegacyShop</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="Default.aspx">Dashboard</a></li>
+                    <li><a href="Products.aspx">Products</a></li>
+                    <li><a href="Customers.aspx">Customers</a></li>
+                    <li><a href="Orders.aspx">Orders</a></li>
+                    <li><a href="Reports/Index">Low stock</a></li>
+                </ul>
+                <p class="navbar-text navbar-right">
+                    <asp:Label ID="lblUser" runat="server" />
+                    <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" Visible="false">Sign out</asp:LinkButton>
+                    <asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx">Sign in</asp:HyperLink>
+                </p>
+            </div>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <hr />
+            <footer><small>&copy; 2026 LegacyShop (test fixture)</small></footer>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <%: Scripts.Render("~/bundles/site") %>
+</body>
+</html>
