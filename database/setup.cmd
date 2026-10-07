@@ -4,4 +4,5 @@ set SRV=%1
 if "%SRV%"=="" set SRV=.
 sqlcmd -S %SRV% -E -b -i "%~dp001_schema.sql" || exit /b 1
 sqlcmd -S %SRV% -E -b -i "%~dp002_seed.sql"   || exit /b 1
+sqlcmd -S %SRV% -E -b -i "%~dp003_order_customers.sql" || exit /b 1
 echo LegacyShop database ready on %SRV%.

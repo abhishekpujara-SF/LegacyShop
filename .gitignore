@@ -5,3 +5,4 @@ packages/
 *.user
 *.suo
 App_Data/*.log
+LegacyShop.Web/App_Data/*.log*

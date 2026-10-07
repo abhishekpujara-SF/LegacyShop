@@ -6,4 +6,7 @@ $(document).ready(function () {
     $("a:contains('Delete')").click(function () {
         return confirm("Delete this record?");
     });
+    $("a:contains('Remove')").click(function () {
+        return confirm("Remove this item or link?");
+    });
 });

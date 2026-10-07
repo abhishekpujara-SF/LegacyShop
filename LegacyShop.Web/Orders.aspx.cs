@@ -35,6 +35,27 @@ namespace LegacyShop.Web
                 _repo.SetStatus(orderId, "Shipped");
                 BindOrders();
             }
+            else if (e.CommandName == "DeleteOrder")
+            {
+                if (!User.Identity.IsAuthenticated)
+                {
+                    Response.Redirect("~/Login.aspx?ReturnUrl=" + Server.UrlEncode(Request.RawUrl));
+                    return;
+                }
+                try
+                {
+                    _repo.DeleteOrder(orderId);
+                    pnlItems.Visible = false;
+                    lblMessage.Text = "Order #" + orderId + " deleted.";
+                    lblMessage.CssClass = "text-success";
+                }
+                catch (InvalidOperationException ex)
+                {
+                    lblMessage.Text = Server.HtmlEncode(ex.Message);
+                    lblMessage.CssClass = "text-danger";
+                }
+                BindOrders();
+            }
         }
     }
 }

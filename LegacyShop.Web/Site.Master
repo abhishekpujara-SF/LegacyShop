@@ -18,6 +18,7 @@
                     <li><a href="Products.aspx">Products</a></li>
                     <li><a href="Customers.aspx">Customers</a></li>
                     <li><a href="Orders.aspx">Orders</a></li>
+                    <li><a href="Relationships.aspx">Relationships</a></li>
                     <li><a href="Reports/Index">Low stock</a></li>
                 </ul>
                 <p class="navbar-text navbar-right">

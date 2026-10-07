@@ -16,6 +16,7 @@
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
             <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
             <asp:BoundField DataField="CreatedOn" HeaderText="Created" ReadOnly="true" DataFormatString="{0:d}" />
+            <asp:HyperLinkField Text="Orders" DataNavigateUrlFields="CustomerId" DataNavigateUrlFormatString="CustomerOrders.aspx?customerId={0}" />
             <asp:CommandField ShowEditButton="true" ShowDeleteButton="true" />
         </Columns>
     </asp:GridView>

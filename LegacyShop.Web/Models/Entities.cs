@@ -38,6 +38,34 @@ namespace LegacyShop.Web.Models
         public DateTime OrderDate { get; set; }
         public string Status { get; set; }
         public decimal Total { get; set; }
+        public int LinkedCount { get; set; }
+    }
+
+    /// <summary>One customer-to-order relationship: the owning customer (Role "Owner") or an additional participant.</summary>
+    public class OrderLink
+    {
+        public int OrderId { get; set; }
+        public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
+        public string Email { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string OrderStatus { get; set; }
+        public decimal OrderTotal { get; set; }
+        public string Role { get; set; }
+        public bool IsOwner { get; set; }
+        public DateTime AddedOn { get; set; }
+    }
+
+    public static class OrderRoles
+    {
+        public const string Owner = "Owner";
+        public static readonly string[] Assignable = { "Billing", "Shipping", "Approver", "Contact" };
+    }
+
+    public static class OrderStatuses
+    {
+        public const string Shipped = "Shipped";
+        public static readonly string[] All = { "New", "Processing", "Shipped", "Cancelled" };
     }
 
     public class OrderItem

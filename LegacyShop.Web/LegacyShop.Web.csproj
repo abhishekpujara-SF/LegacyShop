@@ -281,7 +281,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ProductsApiController.cs" />
+    <Compile Include="Controllers\OrdersApiController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
+    <Compile Include="CustomerOrders.aspx.cs">
+      <DependentUpon>CustomerOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerOrders.aspx.designer.cs">
+      <DependentUpon>CustomerOrders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customers.aspx.cs">
       <DependentUpon>Customers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -289,7 +297,9 @@
     <Compile Include="Customers.aspx.designer.cs">
       <DependentUpon>Customers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Data\CustomerRepository.cs" />
     <Compile Include="Data\Db.cs" />
+    <Compile Include="Data\OrderCustomerRepository.cs" />
     <Compile Include="Data\OrderRepository.cs" />
     <Compile Include="Data\ProductRepository.cs" />
     <Compile Include="Default.aspx.cs">
@@ -315,6 +325,20 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities.cs" />
+    <Compile Include="OrderCustomers.aspx.cs">
+      <DependentUpon>OrderCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderCustomers.aspx.designer.cs">
+      <DependentUpon>OrderCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderEdit.aspx.cs">
+      <DependentUpon>OrderEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderEdit.aspx.designer.cs">
+      <DependentUpon>OrderEdit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -344,19 +368,30 @@
     <Compile Include="Site.master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Relationships.aspx.cs">
+      <DependentUpon>Relationships.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relationships.aspx.designer.cs">
+      <DependentUpon>Relationships.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\legacy-ui.css" />
     <Content Include="Content\site.css" />
+    <Content Include="CustomerOrders.aspx" />
     <Content Include="Customers.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="ExportProducts.ashx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="OrderCustomers.aspx" />
+    <Content Include="OrderEdit.aspx" />
     <Content Include="Orders.aspx" />
     <Content Include="ProductEdit.aspx" />
     <Content Include="Products.aspx" />
+    <Content Include="Relationships.aspx" />
     <Content Include="Scripts\site.js" />
     <Content Include="Site.Master" />
     <Content Include="Views\Reports\Index.cshtml" />

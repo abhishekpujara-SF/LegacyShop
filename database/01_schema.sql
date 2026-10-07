@@ -2,6 +2,7 @@ IF DB_ID('LegacyShop') IS NULL CREATE DATABASE LegacyShop;
 GO
 USE LegacyShop;
 GO
+IF OBJECT_ID('dbo.OrderCustomers') IS NOT NULL DROP TABLE dbo.OrderCustomers;
 IF OBJECT_ID('dbo.OrderItems') IS NOT NULL DROP TABLE dbo.OrderItems;
 IF OBJECT_ID('dbo.Orders') IS NOT NULL DROP TABLE dbo.Orders;
 IF OBJECT_ID('dbo.Products') IS NOT NULL DROP TABLE dbo.Products;

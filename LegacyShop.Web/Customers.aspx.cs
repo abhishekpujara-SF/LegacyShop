@@ -34,7 +34,7 @@ namespace LegacyShop.Web
         {
             if (e.Exception != null)
             {
-                lblMessage.Text = "Cannot delete: customer has orders.";
+                lblMessage.Text = "Cannot delete: customer owns orders or is linked to orders. Remove those first.";
                 e.ExceptionHandled = true;
             }
         }
